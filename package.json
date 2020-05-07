@@ -1,6 +1,6 @@
 {
   "name": "pygments-ayu-syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS Ayu Syntax Highlighting Color Scheme for Pygments",
   "main": "ayu.css",
   "scripts": {
