@@ -2,7 +2,7 @@
   "name": "pygments-ayu-syntax",
   "version": "1.0.0",
   "description": "CSS Ayu Syntax Highlighting Color Scheme for Pygments",
-  "main": "dist/ayu.css",
+  "main": "ayu.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf tmp",
