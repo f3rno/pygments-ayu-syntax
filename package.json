@@ -25,7 +25,7 @@
     "vim"
   ],
   "author": "Cris Mihalache <me@f3rno.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/f3rno/pygments-ayu-syntax/issues"
   },
