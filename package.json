@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf tmp",
-    "build": "npm run build-init && npm run build-py-pygment && npm run build-mv-pygment && npm run build-css-pygment",
-    "build-init": "npm run clean && mkdir dist && mkdir tmp",
+    "build": "npm run build-init && npm run build-py-pygment && npm run build-mv-pygment && npm run build-css-pygment && npm run build-rm-pygment",
+    "build-init": "npm run clean && mkdir tmp",
     "build-py-pygment": "python srcs/vim2pygments/vimpygments.py ./ayu.vim > tmp/ayu.py",
+    "build-rm-pygment": "rm srcs/pygments-main/pygments/styles/ayu.py",
     "build-mv-pygment": "mv tmp/ayu.py srcs/pygments-main/pygments/styles/ayu.py",
     "build-css-pygment": "./srcs/pygments-main/pygmentize -S ayu -f html -a .highlight > ayu.css"
   },
