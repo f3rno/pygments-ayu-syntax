@@ -1,0 +1,32 @@
+{
+  "name": "pygments-ayu-syntax",
+  "version": "1.0.0",
+  "description": "CSS Ayu Syntax Highlighting Color Scheme for Pygments",
+  "main": "dist/ayu.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf tmp",
+    "build": "npm run build-init && npm run build-py-pygment && npm run build-mv-pygment && npm run build-css-pygment",
+    "build-init": "npm run clean && mkdir dist && mkdir tmp",
+    "build-py-pygment": "python srcs/vim2pygments/vimpygments.py ./ayu.vim > tmp/ayu.py",
+    "build-mv-pygment": "mv tmp/ayu.py srcs/pygments-main/pygments/styles/ayu.py",
+    "build-css-pygment": "./srcs/pygments-main/pygmentize -S ayu -f html -a .highlight > ayu.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f3rno/pygments-ayu-syntax.git"
+  },
+  "keywords": [
+    "pygments",
+    "jekyll",
+    "colorscheme",
+    "ayu",
+    "vim"
+  ],
+  "author": "Cris Mihalache <me@f3rno.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f3rno/pygments-ayu-syntax/issues"
+  },
+  "homepage": "https://github.com/f3rno/pygments-ayu-syntax#readme"
+}

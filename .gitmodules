@@ -1,0 +1,6 @@
+[submodule "srcs/vim2pygments"]
+	path = srcs/vim2pygments
+	url = https://github.com/honza/vim2pygments
+[submodule "srcs/pygments-main"]
+	path = srcs/pygments-main
+	url = https://github.com/yujinakayama/pygments-main
